@@ -4,7 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
+    <title>Mutation Observer</title>
   </head>
-  <body></body>
+  <body>
+    <div class="my-content">
+      <h1 class="my-content-header">Mutation Observer</h1>
+      <p class="my-content-body">
+        Let's say below is the sample third party widget that is being populated
+        after page load, that(widget's DOM) we don't have control on
+      </p>
+    </div>
+    <div class="my-third-party-wrapper">
+      <div class="my-third-party-header">Third Party Simulated Widget</div>
+      <!-- Widget content will be injected in below div so we want to observe this div for mutation -->
+      <div id="my-third-party-data"></div>
+    </div>
+  </body>
+  <script src="../../src/simulateThirdParty.js"></script>
+  <script src="../../src/index.js"></script>
 </html>
